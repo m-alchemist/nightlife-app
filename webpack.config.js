@@ -20,16 +20,8 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
-    headers: {
-      historyApiFallback: true,      compress: true,
-   disableHostCheck: true,   // That solved it
-     contentBase: './'
-
-
-       }
-   historyApiFallback: true,
-   contentBase: './',
-   disableHostCheck: true
-    }
+    historyApiFallback: true,
+    contentBase: './',
+    disableHostCheck: true
   }
 };

@@ -6,4 +6,4 @@ This app uses redux simple starter by Stephen Grider which can be cloned using t
 https://github.com/StephenGrider/ReduxSimpleStarter.git
 
 The App can be found at this ink:
-https://weatherapp-malchemist.herokuapp.com
+https://nightlife-app-m-alchemist.herokuapp.com

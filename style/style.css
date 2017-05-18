@@ -318,7 +318,21 @@ Field[type=text]:focus  {
   margin:0px 5px 0px 5px;
   text-align: center;
   padding:20px;
+
 }
+.card-head{
+  min-width:300px;
+  min-height:70px;
+  padding:2px;
+  margin-bottom:5px;
+}
+.goingButton{
+
+   vertical-align: bottom;
+}
+
+
+
 .signinContainer{
   font-color:  white;
   background-color:#0088cc ;

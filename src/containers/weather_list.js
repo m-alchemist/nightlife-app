@@ -39,16 +39,16 @@ class BarList extends Component{
 
         if(this.props.list){
           var className='btn btn-danger';
-          var term='Ditching';
+          var term='0 Going';
           console.log('render button',this.props.list.indexOf(id))
             if(this.props.list.indexOf(id)==-1){
               className='btn btn-danger';
-              term='Ditching';
+              term='0 Going';
 
             }
             else{
               className='btn btn-primary';
-              term='Going';
+              term='1 Going';
 
             }
           }
@@ -68,7 +68,7 @@ class BarList extends Component{
           return (
           btn=(<div>
           <Link to='/signin'>
-          <button className='btn btn-danger'>Ditching! </button>
+          <button className='btn btn-danger'>0 Going! </button>
           </Link>
         </div>)
 
@@ -87,10 +87,14 @@ return btn;
     <div className='text-center in'>
       <br/>
       <div className='card card-block' key={barData.id} >
+      <div className='card-head'>
           <img className='card-image' src={image_url}/>
             <p className='card-title ' > {name}</p>
-            <br/>
-            <div className='text-center'> {this.renderButton(barData.id)}</div>
+          </div>
+          <br/>
+            <div className='text-xs-center'>
+            <div className='card-button '> {this.renderButton(barData.id)}</div>
+            </div>
       </div>
     </div>
     );

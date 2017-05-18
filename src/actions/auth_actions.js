@@ -2,7 +2,7 @@ import axios from 'axios';
 import {AUTH_USER,UNAUTH_USER,AUTH_ERROR,FETCH_MESSAGE,FETCH_USER_LIST} from './types';
 import {browserHistory} from 'react-router';
 
-const ROOT_URL='http://localhost:3090';
+const ROOT_URL='https://nighlife-app-server.herokuapp.com';
 
 
 export function signinUser({email,password}){

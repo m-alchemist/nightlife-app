@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 import requireAuth from './components/auth/require_auth';
 import SearchEngine from './components/search_engine'
 import App from './components/app';
-import Signin from './components/auth/signIn';
+import Signin from './components/auth/signin';
 import Signout from './components/auth/signout';
 import Signup from './components/auth/signup';
 import reducers from './reducers';
@@ -47,7 +47,7 @@ ReactDOM.render(
                   <Route path="/signin" component={Signin}/>
                   <Route path="/signout" component={Signout}/>
                   <Route path="/signup" component={Signup}/>
-              
+
 
 
 

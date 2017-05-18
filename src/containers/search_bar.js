@@ -14,8 +14,8 @@ import {fetchBars} from '../actions/index';
    renderLoading(loading){
 
      if(loading){
-       return (<div id='loadingIcon' className='text-xs-center text-primary'>
-         <i  className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+       return (<div id='loadingIcon' className='text-xs-center '>
+         <i  className="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
 
          </div>);
      }

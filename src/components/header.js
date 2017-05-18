@@ -14,7 +14,7 @@ class Header extends Component {
       <div>
 
     <li className="nav-item" >
-      <Link className='text-danger nav-link' to='/signout'>  Sign out    </Link>
+      <Link className='text-danger nav-link' to='/signout'> <p> Sign out  </p>  </Link>
         </li>
 
             </div>
@@ -22,9 +22,9 @@ class Header extends Component {
     }
     else{
      return([ <li className="nav-item" key={1}>
-        <Link to='/signin' className='text-danger nav-link' > Sign In</Link>
+        <Link to='/signin' className='text-danger nav-link' > <p>Sign In</p> </Link>
       </li>,  <li className="nav-item" key={2}>
-        <Link to='/signup' className=' text-danger nav-link' > Sign Up</Link>
+        <Link to='/signup' className=' text-danger nav-link' > <p>Sign Up</p></Link>
       </li>,])
     }
   }
@@ -32,7 +32,7 @@ class Header extends Component {
   render(){
     return (
       <nav className='nav navbar-light'>
-        <Link to='/' className='text-danger navbar-brand' > Home</Link>
+        <Link to='/' className='text-danger navbar-brand' ><i className="fa fa-home" aria-hidden="true"></i></Link>
 
 
       <ul className="nav navbar-nav">

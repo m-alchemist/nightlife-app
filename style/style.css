@@ -58,17 +58,21 @@ background-size: cover;
 
 
 .header-top {
-      padding: 10px ;
+      padding: 5px ;
+      padding-left:20px;
     width:100%;
     position:fixed;
     top:0px;
-   background-color: #191970;
+   background: url( 'http://myfirstsevendays.com/wp-content/uploads/2013/07/header-background.jpg')  repeat center center fixed;
+
    color: orange;
-  height: 40px;
-  margin-bottom:10px;
+  height: 45px;
+
+  margin-bottom:20px;
     left: 0px;
     top: 0px;
     z-index: 11;
+    border-radius: 0px 0px 5px 5px;
 
 }
 .header-cont {
@@ -124,7 +128,7 @@ z-index: 10;
 .glow2 a{
   text-align: center;
 
-  color:  yellow;
+  color:  white;
   margin-right: 10px;
  -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
@@ -137,7 +141,7 @@ z-index: 10;
 .glow2 a :hover {
 
     text-align: center;
-  color:white;
+  color:#bb321f;
   -webkit-transition: all .4s ease;
      -moz-transition: all .4s ease;
        -o-transition: all .4s ease;
@@ -290,6 +294,7 @@ Field[type=text]:focus  {
 
       margin: auto;
       margin-top:35px;
+      color:white;
 
 
 }

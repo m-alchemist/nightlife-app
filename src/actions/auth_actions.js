@@ -17,7 +17,7 @@ export function signinUser({email,password}){
       //save the jwt token
       //-redirect to the route '/feature'
       dispatch({type:AUTH_USER})
-      console.log(response.data.token)
+
       localStorage.setItem('token',response.data.token)
       browserHistory.push('/')
 
@@ -76,7 +76,7 @@ export function fetchMessage(){
       headers:{authorization:localStorage.getItem('token')}
     })
     .then(response=>{
-      console.log(response)
+
       dispatch({
         type:FETCH_MESSAGE,
         payload:response.data.message
@@ -90,7 +90,7 @@ export function fetchUserlist(){
       headers:{authorization:localStorage.getItem('token')}
     })
     .then(response=>{
-      console.log(response.data.list)
+
       dispatch({
         type:FETCH_USER_LIST,
         payload:response.data.list
@@ -108,7 +108,7 @@ export function fetchUserlist(){
       axios.post(`${ROOT_URL}/alteruserlist`,{type,item},{
         headers:{authorization:localStorage.getItem('token')}})
       .then(response=>{
-        console.log(response.data.list)
+      
         dispatch({
           type:FETCH_USER_LIST,
           payload:response.data.list})

@@ -46,20 +46,19 @@ function getBarList(city){
     return array=axios.post(finalURL)
     .then((results)=>{
       var array=[];
-      console.log(results.data.access_token);
 
 
       const AuthStr = 'Bearer '.concat(results.data.access_token);
-      console.log('ready',AuthStr );
+
       return array=axios.get(finalURL2, { headers: { Authorization: AuthStr } })
       .then(response => {
         // If request is good...
         var request=response.data;
-        console.log(request);
+
         return request;
       })
       .then((data)=>{
-        console.log('yes',data);
+      
         return array=data.businesses;
 
       })

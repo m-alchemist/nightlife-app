@@ -60,8 +60,8 @@ import {fetchBars} from '../actions/index';
         </div>
 
 
-          <button type='submit' className='btn btn-primary' >
-            Submit
+          <button type='submit' className='button button1' >
+            SUBMIT
           </button>
 
           </form>

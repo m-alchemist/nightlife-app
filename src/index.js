@@ -17,15 +17,7 @@ import reduxThunk from 'redux-thunk';
 import {AUTH_USER} from './actions/types';
 
 
-class Hello extends Component{
-  render(){
-    return(<div>HELLO
 
-      </div>
-    );
-
-  }
-}
 //hooking middleware is here
 const createStoreWithMiddleware = applyMiddleware(reduxThunk,ReduxPromise)(createStore);
 const store=createStoreWithMiddleware(reducers);

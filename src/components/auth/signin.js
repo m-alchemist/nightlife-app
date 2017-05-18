@@ -6,7 +6,7 @@
  import Header from '../header';
  class Signin extends Component{
    handleFormSubmit({email,password}){
-     console.log(email,password)
+  
      this.props.signinUser({email,password})
 
    }
@@ -32,26 +32,26 @@
 
        </div>
        <div className='signinContainer'>
-      <h1> Sign In </h1>
+      <h1 className='signin-title'> SIGN IN </h1>
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
       <fieldset className='form-group'>
-          <label>Email:</label>
+          <label><p>Email:</p></label>
           <Field className="form-control" name="email" component="input" type="email"/>
 
       </fieldset>
       <fieldset className='form-group'>
-          <label>Password:</label>
+          <label><p>Password:</p></label>
           <Field className="form-control" name="password" component="input" type="password"/>
 
       </fieldset>
       {this.renderAlert()}
-      <button action='submit' className='btn btn-primary'>
+      <button action='submit' className='button button3'>
       Sign In
       </button>
      </form>
      <br/>
      <Link to='/signup'>
-     <button  className='btn btn-primary'>
+     <button  className='buttonLong button1'>
      Go to Sign Up
      </button>
      </Link>

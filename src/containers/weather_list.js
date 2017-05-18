@@ -16,7 +16,7 @@ class BarList extends Component{
 
 
     if(this.props.list){
-      console.log('on click',this.props.list.indexOf(id));
+    
       if(this.props.list.indexOf(id)==-1){
 
     this.props.alterUserlist('add',id)
@@ -38,16 +38,16 @@ class BarList extends Component{
       if(this.props.authenticated){
 
         if(this.props.list){
-          var className='btn btn-danger';
+          var className='button button2';
           var term='0 Going';
-          console.log('render button',this.props.list.indexOf(id))
+
             if(this.props.list.indexOf(id)==-1){
-              className='btn btn-danger';
+              className='button button2';
               term='0 Going';
 
             }
             else{
-              className='btn btn-primary';
+              className='button button1';
               term='1 Going';
 
             }
@@ -68,7 +68,7 @@ class BarList extends Component{
           return (
           btn=(<div>
           <Link to='/signin'>
-          <button className='btn btn-danger'>0 Going! </button>
+          <button className='button button2'>0 Going! </button>
           </Link>
         </div>)
 

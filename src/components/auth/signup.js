@@ -25,7 +25,7 @@ class SignUp extends Component {
   }
 
   handleFormSubmit({email, password }) {
-    console.log(this.props)
+  
     // call action cretor to sign up
     this.props.signupUser({ email, password })
   }
@@ -41,13 +41,13 @@ class SignUp extends Component {
        </div>
    <div className='signupContainer'>
 
-     <h1> Sign In </h1>
+     <h1 className='signin-title'> Sign In </h1>
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
         <Field name="email" component={renderField} type="email" label="Email"/>
         <Field name="password" component={renderField} type="password" label="Password"/>
         <Field name="passwordConfirm" component={renderField} type="password" label="Password Confirmation"/>
         {this.renderAlert()}
-        <button type="submit" className="btn btn-primary">Sign Up</button>
+        <button type="submit" className="button button3">Sign Up</button>
       </form>
     </div>
     </div>

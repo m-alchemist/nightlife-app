@@ -17,10 +17,10 @@ class Signout extends Component{
        </div>
 
       <div className='signoutContainer'>
-      <h1 className=''>See you next time, bub!</h1>
+      <h1 className='signin-title'>See you next time, bub!</h1>
       <br/>
       <Link to='/'>
-      <button className='btn btn-primary'>Go Back to Main Page</button>
+      <button className='buttonLong button2'>Go Back to Main Page</button>
       </Link>
       </div>
       </div>

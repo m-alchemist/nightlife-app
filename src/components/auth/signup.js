@@ -7,7 +7,7 @@ import Header from '../header';
 // hoisted up not to render each time from scratch in the component (which would result in loosing focus)
 const renderField = ({ input, label, type, meta: { touched, error, warning } }) => (
   <fieldset className="form-group">
-    <label htmlFor={input.name}>{label}</label>
+    <label className='field' htmlFor={input.name}>{label}</label>
     <input className="form-control" {...input} type={type}/>
     { touched && error && <span className="text-danger">{error}</span> }
   </fieldset>
@@ -25,7 +25,7 @@ class SignUp extends Component {
   }
 
   handleFormSubmit({email, password }) {
-  
+
     // call action cretor to sign up
     this.props.signupUser({ email, password })
   }
@@ -41,7 +41,7 @@ class SignUp extends Component {
        </div>
    <div className='signupContainer'>
 
-     <h1 className='signin-title'> Sign In </h1>
+     <h1 className='signin-title'> Sign Up </h1>
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
         <Field name="email" component={renderField} type="email" label="Email"/>
         <Field name="password" component={renderField} type="password" label="Password"/>

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import SearchBar from '../containers/search_bar';
-import BarList from '../containers/weather_list';
+import BarList from '../containers/bar_list';
 
 
 export default class SearchEngine extends Component{

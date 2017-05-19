@@ -19,6 +19,7 @@ export function fetchBars(city,callback){
       callback();
       return data;
     })
+    .catch(()=>callback());
 
     return{
       type: FETCH_BARS,
@@ -58,7 +59,7 @@ function getBarList(city){
         return request;
       })
       .then((data)=>{
-      
+
         return array=data.businesses;
 
       })

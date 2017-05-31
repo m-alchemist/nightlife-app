@@ -8,6 +8,13 @@ body{
   background-size: cover;
   font-family: 'Architects Daughter', cursive;
 
+    margin:0;
+    margin:auto;
+    text-align: center;
+    padding:0;
+
+
+
 }
 .signin-title{
   color:white;
@@ -78,35 +85,36 @@ body{
 
 }
 .header-cont {
+  background: url('http://www.hdwallpapers.in/walls/city_nights__lights-wide.jpg')repeat center center fixed;
+  background-size:cover;
   padding: 10px ;
   width:100%;
-  position:fixed;
-  top:0px;
-  background-color: black;
+  margin:0px;
+  margin-left: 0;
+
   height: 400px;
-  left: 0px;
-  top: 0px;
-  z-index: 10;
+
+
+
 
 }
 
 
 #footer {
 
-  padding:40px;
+  padding:20px;
   width:100%;
-  position:fixed;
+
   top:0px;
-  background-color: black;
-  height: 150px;
+
   left: 0px;
   top: 0px;
-  z-index: 10;
+
 
 }
 
 .barlist{
-  margin-top:  400px;
+  margin-top:  0px;
 }
 
 
@@ -143,22 +151,23 @@ body{
 
   text-align: center;
   background-color: black;
-  height:200px;
-  padding-top:55px;
+  height:150px;
+  padding-top:20px;
 
 }
 
 img{
-  float:left;
-  height:80px;
-  width: 80px;
+  height:50px;
+  width: 50px;
   border-radius: 15px;
-  margin:0px;
+  margin:4px;
+  margin-bottom: 10px;
+  vertical-align:middle;
 
 }
 p{
   font-family: 'Architects Daughter', cursive;
-  font-size:18px;
+  font-size:13px;
   margin:0px;
 }
 .field{
@@ -174,8 +183,8 @@ p{
   border: none;
   border-radius: 2px;
   color: white;
-  width: 100px ;
-  height:50px;
+  width: 80px ;
+  height:40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -183,6 +192,8 @@ p{
   -webkit-transition-duration: .4s; /* Safari */
   transition-duration: .4s;
   cursor: pointer;
+  font-size: 12px;
+  padding: 1px;
   font-family: 'Architects Daughter', cursive;
 }
 .buttonLong {
@@ -212,6 +223,7 @@ p{
   margin: auto;
   padding: 40px;
   margin:10px;
+  font-size: 10px;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -278,7 +290,7 @@ background-color: #4CAF50;
 }
 
 .fa{
-  color:white;
+  color:red;
 }
 h3{
   margin:0px;
@@ -310,39 +322,44 @@ input[type=text]:focus {
 
   margin: auto;
   margin-top:35px;
-  color:white;
+  color:red;
 
 
 }
 
 
 .bar-list{
-  margin-top:400px;
+  margin-top:0;
   display:flex;
   justify-content:space-around;
   flex-wrap: wrap;
 }
 .card{
   width:30%;
-  min-width:350px;
-  height:15%;
-  min-height:200px;
+  min-width:250px;
+  height:150px;
   margin:0px 5px 0px 5px;
   text-align: center;
   padding:20px;
 
 }
 .card-head{
-  min-width:300px;
-  min-height:70px;
+  max-width:250px;
+  min-height:40px;
   padding:2px;
   margin-bottom:5px;
+  text-align: left;
 }
 .goingButton{
 
-  vertical-align: bottom;
+
 }
 
+.card-button{
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
 
 
 .signinContainer{

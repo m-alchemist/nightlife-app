@@ -7,7 +7,7 @@ export default function(state=[], action){
     case FETCH_BARS:
     // return state.concat([action.payload.data]);
     var array=action.payload;
-    console.log('luke this is you father',array);
+  
     return action.payload;
 
   }

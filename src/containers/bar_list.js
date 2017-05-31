@@ -10,21 +10,14 @@ class BarList extends Component{
     if(this.props.authenticated){
       this.props.fetchUserlist();
     }
-
   }
   onClick(id){
-
-
     if(this.props.list){
-    
       if(this.props.list.indexOf(id)==-1){
-
     this.props.alterUserlist('add',id)
       }
       else{
         this.props.alterUserlist('remove',id)
-
-
         }
       }
 
@@ -88,8 +81,8 @@ return btn;
       <br/>
       <div className='card card-block' key={barData.id} >
       <div className='card-head'>
-          <img className='card-image' src={image_url}/>
-            <p className='card-title ' > {name}</p>
+
+            <p className='card-title ' >  <img className='card-image' src={image_url}/> {name}</p>
           </div>
           <br/>
             <div className='text-xs-center'>

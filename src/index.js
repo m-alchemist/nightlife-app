@@ -46,4 +46,4 @@ ReactDOM.render(
     </Router>
 
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('.target'));
